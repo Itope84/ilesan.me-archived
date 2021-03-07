@@ -1,0 +1,15 @@
+@import "./helpers";
+
+@mixin container() {
+  margin-left: auto;
+  margin-right: auto;
+  // leave a margin left and right of about 50px on each side at least
+  width: calc(100% - 100px);
+  max-width: 1200px;
+
+  // Mobile
+  @include mobile() {
+    // 20px on each side on mobile
+    width: calc(100% - 50px);
+  }
+}

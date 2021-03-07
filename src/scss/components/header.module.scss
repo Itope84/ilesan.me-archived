@@ -1,0 +1,16 @@
+@import "../mixins";
+
+.header {
+  @include container;
+  padding: 10px 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+
+  background-color: red;
+  .logo {
+    path {
+      fill: #fff;
+    }
+  }
+}

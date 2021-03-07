@@ -1,32 +1,13 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import * as styles from "../scss/components/header.module.scss"
+// import { Link } from "gatsby"
+import Logo from "../assets/ilesan-me.svg"
 
 const Header: React.FC<PropTypes> = ({ siteTitle = "" }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header className={styles.header}>
+    <Logo className={styles.logo} />
+    {/* logo */}
+    <nav className="header-nav">ilesan.me</nav>
   </header>
 )
 

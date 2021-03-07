@@ -9,7 +9,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "../scss/base.scss"
 // TODO: css reset
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
